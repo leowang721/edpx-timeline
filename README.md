@@ -32,7 +32,7 @@ sudo npm install -g edpx-timeline
 ### Usages
 
 ```javascript
-edp timeline pageLoading -f filePath -s startMark起始标记
+edp timeline pageLoading -f filePath -s startMark
 ```
 
 ### Options
@@ -53,3 +53,15 @@ edp timeline pageLoading -f filePath -s startMark起始标记
     |-package.json
 
 直接访问index.html进行查看
+
+### 示例
+
+输入命令
+```
+edp timeline pageLoading -f ~/work/TimelineRawData-20141010T113333 -s "main.html"
+```
+意味着读取 ~/work/TimelineRawData-20141010T113333 这个数据，并以main.html的请求发送作为起始标记，自动查找所有的资源请求
+
+如果请求的url中包含了main.html，则以第一个匹配的请求发送为相对起始点，此时刻计时为0.
+
+命令执行后，直接访问 ./analysedResult/index.html查看输出的结果
