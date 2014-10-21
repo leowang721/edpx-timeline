@@ -27,14 +27,29 @@ sudo npm install -g edpx-timeline
 
 ## 二级命令 edp timeline pageLoading
 
-    读取Chrome的timeline数据，分析页面整体加载相关的性能，在当前目录下输出结果，结果保存在当前文件夹的analysedResult文件夹中
+读取Chrome的timeline数据，分析页面整体加载相关的性能，在当前目录下输出结果，结果保存在当前文件夹的analysedResult文件夹中
 
 ### Usages
 
+```javascript
 edp timeline pageLoading -f filePath -s startMark起始标记
+```
 
 ### Options
 
-    -f - 文件所在的路径，可以为目录，为目录时自动扫描文件名为TimelineRawData-*的文件
-    -s - startMark起始标记，主要指的是HTML，在加载处理中以HTML的请求发送作为起始标记，则后续的请求、处理的时间点都会相对于这个时间计算相对时间，如果不指定，则默认取数据的第一行的startTime（这可能会导致不够准确）。（暂未支持多个文件的批量输出，下个版本支持）
-    -o - output，可以指定输出的文件夹（当前尚未支持）
++ -f 文件所在的路径，可以为目录，为目录时自动扫描文件名为TimelineRawData-*的文件
++ -s startMark起始标记，主要指的是HTML，在加载处理中以HTML的请求发送作为起始标记，则后续的请求、处理的时间点都会相对于这个时间计算相对时间，如果不指定，则默认取数据的第一行的startTime（这可能会导致不够准确）。（暂未支持多个文件的批量输出，下个版本支持）
++ -o output，可以指定输出的文件夹（当前尚未支持）
+
+### 输出结果
+
+输出结果如下结构：
+
+    |-README
+    |-asset
+    |-copyright.txt
+    |-dep
+    |-index.html
+    |-package.json
+
+直接访问index.html进行查看
