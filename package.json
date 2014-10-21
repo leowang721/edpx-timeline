@@ -1,14 +1,14 @@
 {
   "name": "edpx-timeline",
-  "version": "0.0.2-alpha.1",
-  "description": "edpx扩展脚手架命令timeline，尝试分析处理chrome的timeline数据",
+  "version": "0.1.0-alpha.1",
+  "description": "edpx扩展脚手架命令timeline，分析处理chrome的timeline数据",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fcfe/edpx-timeline.git"
+    "url": "git://github.com/leowang721/edpx-timeline.git"
   },
   "dependencies": {
     "edp-core": "~1.0.25",
@@ -28,12 +28,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fcfe/edpx-timeline/issues"
+    "url": "https://github.com/leowang721/edpx-timeline/issues"
   },
-  "homepage": "https://github.com/fcfe/edpx-timeline",
-  "readme": "edpx-timeline\n=============\n\nEDP插件，命令行模式，尝试分析处理chrome的timeline数据，仅仅是尝试\n",
-  "readmeFilename": "README.md",
-  "_id": "edpx-timeline@0.0.1",
-  "_shasum": "6a7742bc1cc2a5f47770a6afbc912d8f7a069e1d",
-  "_from": "edpx-timeline@~0.0.1"
+  "homepage": "https://github.com/leowang721/edpx-timeline",
+  "readmeFilename": "README.md"
 }
