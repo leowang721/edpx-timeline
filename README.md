@@ -52,7 +52,7 @@ edp timeline pageLoading -f filePath -s startMark
     |-index.html
     |-package.json
 
-直接访问index.html进行查看
+直接访问index.html#/request/index进行查看
 
 ### 示例
 
