@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="wangkemiao" />
+    <title>Timeline分析结果 - edpx-timeline</title>
+    <link rel="stylesheet" type="text/css" href="src/resource/css/common.less">
+    <script src="src/resource/js/esl.js"></script>
+    <script src="src/resource/js/jquery.js"></script>
+    <script>
+    require.config({
+        'baseUrl': 'src',
+        'paths': {
+            'css': 'common/esl/css',
+            'js': 'common/esl/js'
+        },
+        'packages': [
+            {
+                'name': 'echarts',
+                'location': '../dep/echarts/2.0.3/src',
+                'main': 'echarts'
+            },
+            {
+                'name': 'eoo',
+                'location': '../dep/eoo/0.1.1/src',
+                'main': 'main'
+            },
+            {
+                'name': 'er',
+                'location': '../dep/er/3.1.0-beta.5/src',
+                'main': 'main'
+            },
+            {
+                'name': 'esui',
+                'location': '../dep/esui/3.1.0-beta.3/src',
+                'main': 'main'
+            },
+            {
+                'name': 'etpl',
+                'location': '../dep/etpl/3.0.0/src',
+                'main': 'main'
+            },
+            {
+                'name': 'mini-event',
+                'location': '../dep/mini-event/1.0.2/src',
+                'main': 'main'
+            },
+            {
+                'name': 'moment',
+                'location': '../dep/moment/2.7.0/src',
+                'main': 'moment'
+            },
+            {
+                'name': 'underscore',
+                'location': '../dep/underscore/1.5.2/src',
+                'main': 'underscore'
+            },
+            {
+                'name': 'zrender',
+                'location': '../dep/zrender/2.0.4/src',
+                'main': 'zrender'
+            }
+        ]
+    });
+    </script>
+</head>
+
+<body>
+<div id="main"></div>
+<script>
+    require(['main']);
+</script>
+</body>
+</html>

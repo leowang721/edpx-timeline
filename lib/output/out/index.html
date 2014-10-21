@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="wangkemiao" />
+    <title>Timeline分析结果 - edpx-timeline</title>
+    <link rel="stylesheet" type="text/css" href="asset/resource/css/common.css">
+    <script src="asset/resource/js/esl.js"></script>
+    <script src="asset/resource/js/jquery.js"></script>
+    <script>
+    require.config({
+        'baseUrl': 'asset',
+        'paths': {
+            'css': 'common/esl/css',
+            'js': 'common/esl/js'
+        },
+        'packages': [
+            {
+                'name': 'echarts',
+                'location': '../dep/echarts/2.0.3/asset',
+                'main': 'echarts'
+            },
+            {
+                'name': 'eoo',
+                'location': '../dep/eoo/0.1.1/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'er',
+                'location': '../dep/er/3.1.0-beta.5/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'esui',
+                'location': '../dep/esui/3.1.0-beta.3/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'etpl',
+                'location': '../dep/etpl/3.0.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'mini-event',
+                'location': '../dep/mini-event/1.0.2/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'moment',
+                'location': '../dep/moment/2.7.0/asset',
+                'main': 'moment'
+            },
+            {
+                'name': 'underscore',
+                'location': '../dep/underscore/1.5.2/asset',
+                'main': 'underscore'
+            },
+            {
+                'name': 'zrender',
+                'location': '../dep/zrender/2.0.4/asset',
+                'main': 'zrender'
+            }
+        ]
+    });
+    </script>
+</head>
+
+<body>
+<div id="main"></div>
+<script>
+    require(['main']);
+</script>
+</body>
+</html>
